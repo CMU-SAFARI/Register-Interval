@@ -1,0 +1,21 @@
+digraph f {
+subgraph "cluster__Z6KernelP4NodePiPbS2_S1_S2_i" {
+node [fontname="Courier",fontsize=10,shape=Mrecord];
+"_Z6KernelP4NodePiPbS2_S1_S2_i"
+[label="{<entry>	.global		_Z6KernelP4NodePiPbS2_S1_S2_i\l	.type		_Z6KernelP4NodePiPbS2_S1_S2_i,@function\l	.size		_Z6KernelP4NodePiPbS2_S1_S2_i,(.L_28\ -\ _Z6KernelP4NodePiPbS2_S1_S2_i)\l	.other		_Z6KernelP4NodePiPbS2_S1_S2_i,\<no\ object\>\l_Z6KernelP4NodePiPbS2_S1_S2_i:\l.text._Z6KernelP4NodePiPbS2_S1_S2_i:\l\ \ MOV\ R1,\ c\[0x0\]\[0x44\];\l\ \ S2R\ R0,\ SR_CTAID.X;\l\ \ MOV\ R2,\ c\[0x0\]\[0x168\];\l\ \ S2R\ R3,\ SR_TID.X;\l\ \ ISCADD\ R6,\ R0,\ R3,\ 0x8;\l\ \ MOV\ R3,\ c\[0x0\]\[0x16c\];\l\ \ ISETP.GE.AND\ P0,\ PT,\ R6,\ c\[0x0\]\[0x170\],\ PT;\l|<exit0>\ \ @P0\ EXIT;\l|<exitpost0>\ \ ISET.LT.AND\ R7,\ R6,\ RZ,\ PT;\l\ \ IADD\ R4.CC,\ R6,\ c\[0x0\]\[0x150\];\l\ \ IADD.X\ R5,\ R7,\ c\[0x0\]\[0x154\];\l\ \ LD.E.U8\ R0,\ \[R4\];\l\ \ ISETP.EQ.AND\ P0,\ PT,\ R0,\ RZ,\ PT;\l|<exit1>\ \ @P0\ EXIT;\l|<exitpost1>\ \ IADD\ R8.CC,\ R6,\ c\[0x0\]\[0x158\];\l\ \ SHR.U32\ R0,\ R6,\ 0x1d;\l\ \ MOV\ R10,\ c\[0x0\]\[0x140\];\l\ \ MOV32I\ R12,\ 0x1;\l\ \ IADD.X\ R9,\ R7,\ c\[0x0\]\[0x15c\];\l\ \ ISCADD\ R0,\ R7,\ R0,\ 0x3;\l\ \ IMAD.U32.U32\ R10.CC,\ R6,\ 0x8,\ R10;\l\ \ ST.E.U8\ \[R4\],\ RZ;\l\ \ IADD.X\ R11,\ R0,\ c\[0x0\]\[0x144\];\l\ \ ST.E.U8\ \[R8\],\ R12;\l\ \ LD.E\ R0,\ \[R10+0x4\];\l\ \ IADD\ R4.CC,\ R10,\ 0x4;\l\ \ IADD.X\ R5,\ R11,\ RZ;\l\ \ ISETP.LT.AND\ P0,\ PT,\ R0,\ 0x1,\ PT;\l|<exit2>\ \ @P0\ EXIT;\l|<exitpost2>\ \ LD.E\ R10,\ \[R4+-0x4\];\l\ \ MOV32I\ R9,\ 0x4;\l\ \ SHR.U32\ R8,\ R6,\ 0x1e;\l\ \ IMAD.U32.U32\ R6.CC,\ R6,\ R9,\ c\[0x0\]\[0x160\];\l\ \ MOV\ R11,\ R10;\l\ \ ISCADD\ R7,\ R7,\ R8,\ 0x2;\l\ \ IADD.X\ R7,\ R7,\ c\[0x0\]\[0x164\];\l\ \ IMAD\ R8.CC,\ R10,\ R9,\ c\[0x0\]\[0x148\];\l\ \ IMAD.HI.X\ R9,\ R10,\ R9,\ c\[0x0\]\[0x14c\];\l\ \ NOP;\l\ \ NOP;\l\ \ NOP;\l\ \ NOP;\l}"]
+"_Z6KernelP4NodePiPbS2_S1_S2_i":exitpost2:s -> ".L_2":entry:n [style=solid];
+node [fontname="Courier",fontsize=10,shape=Mrecord];
+".L_2"
+[label="{<entry>.L_2:\l\ \ LD.E\ R12,\ \[R8\];\l\ \ ISET.LT.AND\ R14,\ R12,\ RZ,\ PT;\l\ \ IADD\ R16.CC,\ R12,\ c\[0x0\]\[0x158\];\l\ \ IADD.X\ R17,\ R14,\ c\[0x0\]\[0x15c\];\l\ \ LD.E.U8\ R13,\ \[R16\];\l\ \ ISETP.NE.AND\ P0,\ PT,\ R13,\ RZ,\ PT;\l|<exit0>\ \ @P0\ BRA.U\ `(.L_1);\l|<exitpost0>\ \ @!P0\ LD.E\ R0,\ \[R6\];\l\ \ @!P0\ MOV32I\ R11,\ 0x4;\l\ \ @!P0\ IMAD.U32.U32\ R16.CC,\ R12,\ R11,\ c\[0x0\]\[0x160\];\l\ \ @!P0\ IMAD.HI.X\ R17,\ R12,\ R11,\ c\[0x0\]\[0x164\];\l\ \ @!P0\ IADD\ R0,\ R0,\ 0x1;\l\ \ @!P0\ IADD\ R12.CC,\ R12,\ c\[0x0\]\[0x150\];\l\ \ @!P0\ MOV32I\ R15,\ 0x1;\l\ \ @!P0\ ST.E\ \[R16\],\ R0;\l\ \ @!P0\ IADD.X\ R13,\ R14,\ c\[0x0\]\[0x154\];\l\ \ @!P0\ ST.E.U8\ \[R12\],\ R15;\l\ \ @!P0\ ST.E.U8\ \[R2\],\ R15;\l\ \ @!P0\ LD.E\ R0,\ \[R4\];\l\ \ @!P0\ LD.E\ R11,\ \[R4+-0x4\];\l}"]
+".L_2":exit0:e -> ".L_1":entry:n [style=solid];
+".L_2":exitpost0:s -> ".L_1":entry:n [style=solid];
+node [fontname="Courier",fontsize=10,shape=Mrecord];
+".L_1"
+[label="{<entry>.L_1:\l\ \ IADD\ R10,\ R10,\ 0x1;\l\ \ IADD\ R12,\ R11,\ R0;\l\ \ IADD\ R8.CC,\ R8,\ 0x4;\l\ \ ISETP.LT.AND\ P0,\ PT,\ R10,\ R12,\ PT;\l\ \ IADD.X\ R9,\ R9,\ RZ;\l|<exit0>\ \ @P0\ BRA\ `(.L_2);\l|<exit1>\ \ EXIT;\l}"]
+".L_1":exit0:e -> ".L_2":entry:n [style=solid];
+node [fontname="Courier",fontsize=10,shape=Mrecord];
+".L_3"
+[label="{<entry>.L_3:\l|<exit0>\ \ BRA\ `(.L_3);\l}"]
+".L_3":exit0:e -> ".L_3":entry:n [style=solid];
+}
+}
