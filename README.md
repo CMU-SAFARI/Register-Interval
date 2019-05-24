@@ -1,7 +1,7 @@
 #### Overview
 Register-interval creation algorithm is a part of paper _**"LTRF: Enabling High-Capacity Register Files for GPUs via Hardware/Software Cooperative Register Prefetching"**_. This algorithm divides the control flow graph of the application into some register-intervals which have two main characteristics:
 * Register-intevals have only one entry-point in CFG.
-* They also have a limted number of registers.
+* They also have a limited number of registers.
 
 In LTRF paper, a PREFETCH instruction is inserted at the beginning of each register-interval that brings its all registers to the register file cache.
 
